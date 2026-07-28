@@ -1,5 +1,8 @@
 import torch
 import torch.nn as nn
+from FeedForwardLayer import PositionwiseFeedForward 
+from MultiHeadAttention import MultiHeadAttention
+from layerNorm import LayerNorm
 from transformer_embedding import TransformerEmbedding
 
 class DecoderLayer(nn.Module):
