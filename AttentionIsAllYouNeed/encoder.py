@@ -1,5 +1,10 @@
 import torch
 import torch.nn as nn
+from FeedForwardLayer import PositionwiseFeedForward 
+from MultiHeadAttention import MultiHeadAttention
+from layerNorm import LayerNorm
+from transformer_embedding import TransformerEmbedding
+
 class EncoderLayer(nn.Module):
 
     def __init__(self, d_model, ffn_hidden, n_head, drop_prob):
